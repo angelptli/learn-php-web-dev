@@ -12,10 +12,20 @@
       echo
       "<center>
         <h1>Header 1</h1>
-        <h2>Header 2</h2>
         <hr>
         <p>Hello PHP Server!</p>
       </center>";
+
+      $avg = 613;
+      $item = "pomegranate";
+      echo
+      "<p>
+        I like the smell of a fresh $item <br>
+        Each $item has on average $avg seeds <br>
+        I have $item lotion from Bath & Body Works <br>
+        What kind? Midnight $item <br>
+      </p>";
+
     ?>
   </body>
 </html>
