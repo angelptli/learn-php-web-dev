@@ -9,8 +9,7 @@
 
   <body>
     <?php 
-      echo
-      "<center>
+      echo "<center>
         <h1>Header 1</h1>
         <hr>
         <p>Hello PHP Server!</p>
@@ -18,8 +17,7 @@
 
       $avg = 613;
       $item = "pomegranate";
-      echo
-      "<p>
+      echo "<p>
         I like the smell of a fresh $item <br>
         Each $item has on average $avg seeds <br>
         I have $item lotion from Bath & Body Works <br>
