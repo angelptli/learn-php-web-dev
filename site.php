@@ -54,6 +54,16 @@
       echo max(1, 10) . "<br>"; // 10
       echo sqrt(4) . "<br>"; // 2
       echo pow(2, 3) . "<br>"; // 8
+
+      echo "<hr><br>Form:<br>";
+    ?>
+    <form action="site.php" method="get">
+      Name: <input type="text" name="name">
+      <input type="submit">
+    </form>
+    <br>
+    <?php
+      echo $_GET["name"];
     ?>
   </body>
 </html>
