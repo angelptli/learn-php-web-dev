@@ -40,7 +40,20 @@
       echo "Now change the second word: <br>" .
       strtolower(str_replace("Should", "Shall", $words1)) . "<br>";
       // substr($var, start, quantity)
-      echo "The third word in the sentence is: " . strtolower(substr($words1, 12, 2))
+      echo "The third word in the sentence is: " . strtolower(substr($words1, 12, 2)) . "<br>";
+
+      echo "<hr><br>Numbers:<br>";
+
+      // Some math review
+      $num = 55;
+      $num++;
+      $num += 20;
+      echo $num . "<br>";
+      $num = -101;
+      echo abs($num) . "<br>";  // 101
+      echo max(1, 10) . "<br>"; // 10
+      echo sqrt(4) . "<br>"; // 2
+      echo pow(2, 3) . "<br>"; // 8
     ?>
   </body>
 </html>
