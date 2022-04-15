@@ -14,7 +14,7 @@
       $items = array("wallet", 3, true);
 
       echo "I have " . $items[1] . " " . $fruits[2] . "s. <br>";
-      echo "I  have " . count($fruits) . " fruits. <br>";
+      echo "I have " . count($fruits) . " fruits. <br>";
 
     ?>
   </body>
