@@ -19,9 +19,13 @@
       // Create function that has parameters
       function greetName($name, $num) {
         echo "Hello " . $name . ". You have " . $num . " cats. <br>";
+
+        return $num;
       }
 
-      greetName("Angel", 0);
+      $num = greetName("Angel", 0);
+
+      echo "Again, you have " . $num . " cats.<br>";
     ?>
   </body>
 </html>
