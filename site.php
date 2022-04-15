@@ -54,16 +54,26 @@
       echo max(1, 10) . "<br>"; // 10
       echo sqrt(4) . "<br>"; // 2
       echo pow(2, 3) . "<br>"; // 8
-
-      echo "<hr><br>Form:<br>";
     ?>
+
+    <hr>
+    
+    <!-- Form to get name and age input -->
     <form action="site.php" method="get">
       Name: <input type="text" name="name">
+      Age: <input type="number" name="age">
       <input type="submit">
     </form>
-    <br>
-    <?php
-      echo $_GET["name"];
-    ?>
+
+    <!-- Display entered name -->
+    <?php if(isset($_GET["name"])): ?>
+      Your name is <?php echo $_GET["name"]; ?>
+    <?php endif; ?>
+
+    <!-- Display entered age -->
+    <?php if(isset($_GET["age"])): ?>
+      and your age is <?php echo $_GET["age"]; ?>
+    <?php endif; ?>
+
   </body>
 </html>
