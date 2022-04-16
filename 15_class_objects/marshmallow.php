@@ -8,14 +8,18 @@
   </head>
   <body>
     <?php
-      class Marshmallow{
+      class Marshmallow {
         var $sweetness;
         var $color;
         var $quantity;
+
+        function __construct($orderNum) {
+          echo "<h3>Order No. $orderNum</h3>";
+        }
       }
 
       // Create Marshmallow class object
-      $order1 = new Marshmallow;
+      $order1 = new Marshmallow(1);
 
       // Assign values to class members
       $order1->sweetness = "50%";
@@ -23,8 +27,7 @@
       $order1->quantity = "15";
 
       // Display order 1
-      echo "<h3>Your order</h3>
-      Total: $order1->quantity <br>
+      echo "Total: $order1->quantity <br>
       Color: $order1->color <br>
       Sweetness: $order1->sweetness <br>";
 
